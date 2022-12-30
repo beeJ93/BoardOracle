@@ -4,6 +4,7 @@ public class Criteria {
 	private int pageNum;
 	private int amount;
 	private int skip;
+	private String keyword;
 	//기본셋팅
 	public Criteria() {
 		this(1,10);
@@ -35,8 +36,15 @@ public class Criteria {
 	public void setSkip(int skip) {
 		this.skip = skip;
 	}
+	public String getKeyword() {
+		return keyword;
+	}
+	public void setKeyword(String keyword) {
+		this.keyword = keyword;
+	}
 	@Override
 	public String toString() {
-		return "Criteria [pageNum=" + pageNum + ", amount=" + amount + ", skip=" + skip + "]";
+		return "Criteria [pageNum=" + pageNum + ", amount=" + amount + ", skip=" + skip + ", keyword=" + keyword + "]";
 	}
+	
 }

@@ -49,6 +49,7 @@
 		<input type="hidden" id="bno" name="bno" value='<c:out value="${pageInfo.bno}"/>'>
 		<input type="hidden" name="pageNum" value='<c:out value="${cri.pageNum}"/>'>
 		<input type="hidden" name="amount" value='<c:out value="${cri.amount}"/>'>
+		<input type="hidden" name="keyword" value="${cri.keyword}">
 	</form>
 	<script>
 		let form = $("#infoForm");

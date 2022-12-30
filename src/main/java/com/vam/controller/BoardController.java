@@ -29,7 +29,7 @@ public class BoardController {
 	public void boardListGET(Model model, Criteria cri) {
 		log.info("게시판 목록 페이지 진입");
 		model.addAttribute("list", bservice.getListPaging(cri));
-		int total = bservice.getTotal();
+		int total = bservice.getTotal(cri);
 		PageMakerDTO pageMake = new PageMakerDTO(cri, total);
 		System.out.println("cri : " + cri);
 		System.out.println("total : " + total);
